@@ -30,6 +30,7 @@ export default defineConfig(() => {
         PUBLIC_DECRYPTION_URL: process.env.PUBLIC_DECRYPTION_URL,
         ROUTER_TYPE,
         SHOW_FEATURES: process.env.SHOW_FEATURES !== 'false',
+        SHOW_ONE_CLICK_LINK: process.env.SHOW_ONE_CLICK_LINK !== 'false',
         REACT_APP_BACKEND_URL: process.env.REACT_APP_BACKEND_URL,
         REACT_APP_FALLBACK_LANGUAGE: process.env.REACT_APP_FALLBACK_LANGUAGE,
         START_SERVER_AND_TEST_INSECURE:

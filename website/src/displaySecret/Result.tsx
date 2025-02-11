@@ -38,7 +38,7 @@ const Result = ({ uuid, password, prefix, customPassword }: ResultProps) => {
       <TableContainer>
         <Table>
           <TableBody>
-            {!customPassword && (
+            {!customPassword && process.env.SHOW_ONE_CLICK_LINK && (
               <Row label={t('result.rowLabelOneClick')} value={full} />
             )}
             <Row label={t('result.rowLabelShortLink')} value={short} />
