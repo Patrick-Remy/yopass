@@ -42,7 +42,7 @@ const App = () => {
           <Header />
           <Container maxWidth={'lg'}>
             <Routing />
-            <Features />
+            {process.env.SHOW_FEATURES ? <Features /> : ''}
             <Attribution />
           </Container>
         </Router>
